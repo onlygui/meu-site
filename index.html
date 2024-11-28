@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórias de Suspense</title>
+  <style>
+    body {
+      background-color: #181818;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 2.5rem;
+    }
+
+    .story-cloud {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .story-cloud:before {
+      content: " ";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+
+    .story-cloud h2 {
+      font-size: 1.8rem;
+      color: #ccc;
+    }
+
+    .story-cloud p {
+      font-size: 1.2rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Histórias de Suspense</h1>
+    <p>Explore o desconhecido...</p>
+  </header>
+
+  <main>
+    <!-- Exemplo de história -->
+    <div class="story-cloud">
+      <h2>A Sombra na Janela</h2>
+      <p>Quando a noite caiu e as luzes da casa começaram a falhar, ele percebeu algo estranho na janela. Uma sombra, sem explicação, se movia lentamente, como se o observasse. O que era aquilo? E, mais importante, o que queria?</p>
+    </div>
+
+    <!-- Mais histórias podem ser adicionadas abaixo como divs com a classe "story-cloud" -->
+    <div class="story-cloud">
+      <h2>O Eco do Passado</h2>
+      <p>Ela sempre ouviu os ecos da antiga mansão, mas nunca imaginou que um grito do passado ecoaria em seus ouvidos novamente. Ao abrir o antigo diário, algo a fez entender que o eco não era apenas uma lembrança...</p>
+    </div>
+  </main>
+
+  <div class="footer">
+    <p>© 2024 Histórias de Suspense | Criado por <a href="#">Onlyguii</a></p>
+  </div>
+</body>
+</html>

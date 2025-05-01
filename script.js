@@ -4,8 +4,8 @@ const banners = [
     produto: 'https://unistorexx.com/'
   },
   {
-    img: 'https://public-blob.squarecloud.dev/1057518718378324009/31074878570_ma1p6vnm-1cf3.webp',
-    produto: 'https://simplestore.shop/product/1744451498081483143961586964179'
+    img: 'https://media.discordapp.net/attachments/1367480194721382499/1367530291761123358/Combo_streaming.png?ex=6814eb55&is=681399d5&hm=4fdd87abb12f860f22b215d9e03eb6868b3a7518aaa9ba3ab355d9d53b1c0620&=&format=webp&quality=lossless&width=843&height=474',
+    produto: 'https://unistorexx.com/category/174571650400531394498182945521230'
   },
   {
     img: 'https://public-blob.squarecloud.dev/1057518718378324009/77235067904_ma1pb48h-f349.webp',

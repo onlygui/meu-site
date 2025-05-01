@@ -1,80 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Links Importantes</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js"></script>
-    <script>
-        // Configuração do Firebase (substitua pelas suas credenciais)
-        const firebaseConfig = {
-            apiKey: "SUA_API_KEY",
-            authDomain: "SEU_DOMINIO.firebaseapp.com",
-            projectId: "site-712cc",
-            storageBucket: "SEU_BUCKET.appspot.com",
-            messagingSenderId: "SEU_SENDER_ID",
-            appId: "SEU_APP_ID"
-        };
-
-        // Inicializa o Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-
-        // Atualiza o contador de visitas
-        db.collection('visitas').doc('total').get().then(doc => {
-            let visitas = doc.exists ? doc.data().total + 1 : 1;
-            db.collection('visitas').doc('total').set({ total: visitas });
-            document.getElementById('contador').innerText = visitas;
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DentroDaLay - Lojas Confiáveis</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>onlyguii</h1>
-            <p>Conecte-se comigo através dos links abaixo!</p>
+  <div class="main-container">
+    <div class="content-wrapper">
+      <div class="carousel-container">
+        <div class="carousel-banner">
+          <a href="#" id="banner-link" target="_blank">
+            <img id="banner-image" src="" alt="Produto em destaque" class="banner-img">
+          </a>
+          <div class="carousel-controls">
+            <button id="prev-banner" class="nav-button"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-banner" class="nav-button"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="carousel-indicators"></div>
         </div>
-    </header>
 
-    <main>
-        <div class="container">
-            <section class="links">
-                <h2>Conteùdo</h2>
-                <ul>
-                    <li>
-                        <a href="https://simplestore.shop" target="_blank">
-                            <i class="fas fa-store"></i> Loja Web
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/@SrSinceru" target="_blank">
-                            <i class="fab fa-youtube"></i> Canal YouTube
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/onlygui" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/zaZKTS2zBg" target="_blank">
-                            <i class="fab fa-discord"></i> Discord
-                        </a>
-                    </li>
-                </ul>
-            </section>
+        <div class="carousel-text">
+          <div class="logo-container">
+            <h1><span class="brand">DentroDaLay</span></h1>
+            <div class="underline"></div>
+          </div>
+          <p class="description">Selecionamos as melhores lojas confiáveis do mercado. Se você é produtor/dono de loja e quer adicionar sua loja, entre em contato pelo Discord.</p>
+          <div class="buttons">
+            <a href="https://discord.com/oauth2/authorize?client_id=1204487879951384637&response_type=code&redirect_uri=https%3A%2F%2Fauth.nevermiss.pw%2Flogin&scope=identify+guilds+guilds.join&state=1204487879951384637%201313875006727393301" class="btn auth-btn">
+              <i class="fab fa-discord"></i> Conectar
+            </a>
+            <a href="https://widget.livepix.gg/embed/50b8ec3e-3740-49cb-b555-db64c9281a16" class="btn support-btn">
+              <i class="fas fa-heart"></i> Apoie
+            </a>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 ReaL Code Studio. Todos os direitos reservados.</p>
-            <p>Visitas: <span id="contador">0</span></p>
-        </div>
+      <div class="footer-content">
+        <p>&copy; 2025 <strong>DentroDaLay</strong>. Todos os direitos reservados.</p>
+        <p class="made-with">Feito com <span class="heart">💜</span> por onlyguii</p>
+      </div>
     </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
